@@ -36,4 +36,6 @@ Here are the options for the script:
 1. Schedule the script to run at midnight, 6am, noon, and 6pm. You can schedule it to run whenever you want, those are just the times that work for me. The reason I run it 4x/day is that my Mac will inevitably be off (airplane, battery died, etc.) and I want to make sure I get a datapoint every day. I'd rather get a few extra datapoints than none. If you don't know how to schedule a ```cron``` job, google it. On OS X, it might be better to use ```launchctl``` instead of ```cron```.
 
 ## Help & contributions
-Email me at ```jerzygangi@gmail.com``` with questions, or submit a bug and I'll do my best to fix it. If you want to contribute code, join in.
+Email me at ```jerzygangi@gmail.com``` with questions, or submit a bug and I'll do my best to fix it.
+
+If you want to contribute code, join in.
