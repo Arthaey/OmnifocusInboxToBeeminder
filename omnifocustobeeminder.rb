@@ -6,7 +6,7 @@ require "etc"
 # Get command line options and parse them
 cmd_line_options = {}
 OptionParser.new do |opts|
-  opts.banner = "Usage: main.rb [options]"
+  opts.banner = "Usage: omnifocustobeeminder.rb [options]"
 
   opts.on("-k key", "--apikey KEY", "#Your Beeminder API key") do |key|
     cmd_line_options[:key] = key
