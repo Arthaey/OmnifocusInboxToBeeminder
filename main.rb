@@ -16,7 +16,7 @@ OptionParser.new do |opts|
     cmd_line_options[:goal] = goal
   end
   
-  opts.on("-p path", "--omnifocus_database_path PATH", "#Path to your omnifocus database") do |path|
+  opts.on("-p path", "--database_path PATH", "#Path to your omnifocus database") do |path|
     cmd_line_options[:path] = path
   end
 
