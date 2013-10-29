@@ -9,15 +9,15 @@ Keeping your OmniFocus inbox at zero is a challenge, but there's help. Omnifocus
 ## Usage
 The basic syntax is:
 ```
-ruby main.rb -k KEY -g GOAL
+ruby omnifocustobeeminder.rb -k KEY -g GOAL
 ```
 For example:
 ```
-ruby main.rb -k MYSECRETBEEMINDERAPIKEY -g omnifocuszero
+ruby omnifocustobeeminder.rb -k MYSECRETBEEMINDERAPIKEY -g omnifocuszero
 ```
 If your Omnifocus database is in a special location, you can specify it:
 ```
-ruby main.rb -k MYSECRETBEEMINDERAPIKEY -g omnifocuszero -p "/MyFiles/OmniFocusDatabase2" 
+ruby omnifocustobeeminder.rb -k MYSECRETBEEMINDERAPIKEY -g omnifocuszero -p "/MyFiles/OmniFocusDatabase2" 
 ```
 Here are the options for the script:
 ```
@@ -31,8 +31,8 @@ Here are the options for the script:
 
 1. Log into Beeminder. Create a new "Inbox less" goal. When prompted, give it a shortname like ```omnifocuszero```
 1. Get your Beeminder token here: https://www.beeminder.com/api/v1/auth_token.json
-1. Run the script in your console, as described above: ```ruby main.rb -k MYSECRETBEEMINDERAPIKEY -g omnifocuszero```. The -k option should be the auth token you got in the previous step.
-1. On the Beeminder website, check to see if the new datapoint was registered. Below the chart for your goal, there is a section called Add Data. It should say something like, ```28 14 "Automated Omnifocus count as of 10/28/2013 at 7:04 AM"```. If you see the datapoint, the script is working. If you don't see the datapoint, you have a problem. In that case, stop here until you fix it.
+1. Run the script in your console, as described above: ```ruby omnifocustobeeminder.rb -k MYSECRETBEEMINDERAPIKEY -g omnifocuszero```. The -k option should be the auth token you got in the previous step.
+1. On the Beeminder website, check to see if the new datapoint was registered. Below the chart for your goal, there is a section called Add Data. It should say something like, ```Automated Omnifocus count as of 10/28/2013 at 7:04 AM```. If you see the datapoint, the script is working. If you don't see the datapoint, you have a problem. In that case, stop here until you fix it.
 1. Schedule the script to run using launchd: http://notes.jerzygangi.com/creating-a-launchd-task-that-calls-ruby-using-rvm/. If you're not using rvm, you can skip over those sections.
 
 ## Help & contributions
