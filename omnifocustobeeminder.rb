@@ -1,4 +1,4 @@
-require 'optparse'
+require "optparse"
 require "beeminder"
 require "sqlite3"
 require "etc"
