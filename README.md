@@ -9,9 +9,13 @@ Keeping your OmniFocus inbox at zero is a challenge, but there's help. Omnifocus
 ## Usage
 The basic syntax is:
 ```
-main.rb -k KEY -g GOAL -p PATH
+main.rb -k KEY -g GOAL
 ```
-For example
+For example:
+```
+main.rb -k MYSECRETBEEMINDERAPIKEY -g omnifocuszero
+```
+If your Omnifocus database is in a special location, you can specify it:
 ```
 main.rb -k MYSECRETBEEMINDERAPIKEY -g omnifocuszero -p "/MyFiles/OmniFocusDatabase2" 
 ```
@@ -23,8 +27,8 @@ Here are the options for the script:
 -h, --help                       #Show this message
 ```
 
-## Setup
+## Setup instructions
 
-1. Log into Beeminder. Create a new "Inbox less" goal. Give it a name.
+1. Log into Beeminder. Create a new "Inbox less" goal. Give it a name like ```omnifocuszero```.
 1. Get your Beeminder token here: https://www.beeminder.com/api/v1/auth_token.json
-1. Run the script in your console 
+1. Run the script in your console, as described above. For example ```main.rb -k MYSECRETBEEMINDERAPIKEY -g omnifocuszero```.
